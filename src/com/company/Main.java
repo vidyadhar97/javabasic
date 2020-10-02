@@ -3,11 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-       int age = 26;
-       int minimunVotingAge = 18;
-       if(minimunVotingAge<= shitalAge )
-           System.out.println("Shital Age is Qualified for voting");
-       else
-           System.out.println("Age not Qualified");
+        int sp = 100, bp = 80;
+        int profit = sp - bp ;
+        System.out.println(profit);
+        double profitPer =((double)profit/bp) *100 ;
+        System.out.println(profitPer);
     }
-}
+    }
