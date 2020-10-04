@@ -1,23 +1,20 @@
 package com.company;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args) {
-
-        for (int i = 0; i <= 10; i++) {
-
-            if(i%2 == 0) {
-                System.out.println("No " + i + " is even");
-            }
-                else
-                {
-                    System.out.println("No " + i + " is odd");
-                }
-
+        int[]a = {9,8,7,6,5};
+        int max = Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
+        for (int i = 0; i <=4; i++) {
+            if(max <= a[i])
+                max = a[i];
+            if(min >= a[i])
+                min = a[i];
 
         }
+        System.out.println("Max no is " + max );
+                System.out.println("Min no is " + min );
+
     }
     }
