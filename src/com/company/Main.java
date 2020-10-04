@@ -3,18 +3,17 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        int[]a = {9,8,7,6,5};
-        int max = Integer.MIN_VALUE;
-        int min=Integer.MAX_VALUE;
-        for (int i = 0; i <=4; i++) {
-            if(max <= a[i])
-                max = a[i];
-            if(min >= a[i])
-                min = a[i];
 
+        int n = 5;
+
+        for (int i = 0; i < n; i++) {
+            for(int j=n-i;j>1;j--)
+            {
+                System.out.print(" ");
+            }
+                for (int j = 0; j < 2*i+1 ; j++)
+                    System.out.print("*");
+                System.out.println("\n");
         }
-        System.out.println("Max no is " + max );
-                System.out.println("Min no is " + min );
-
     }
-    }
+}
