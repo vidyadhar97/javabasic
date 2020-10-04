@@ -1,19 +1,19 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        int n = 5;
-
-        for (int i = 0; i < n; i++) {
-            for(int j=n-i;j>1;j--)
+        Integer a[] = {1,2,3,4,5,6,7,8,9,10};
+        ArrayList<Integer> list = new ArrayList();
+            for(int i=0;i<=9;i++)
             {
-                System.out.print(" ");
+                if(a[i]%3==0)
+                    list.add(a[i]);
+                }
+                System.out.println(list);
             }
-                for (int j = 0; j < 2*i+1 ; j++)
-                    System.out.print("*");
-                System.out.println("\n");
-        }
+
     }
-}
